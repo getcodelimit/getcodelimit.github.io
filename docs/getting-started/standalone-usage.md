@@ -1,5 +1,42 @@
 # Standalone Usage
 
+## Installation
+
+### Homebrew
+
+Code Limit is available on
+[Homebrew](https://formulae.brew.sh/formula/codelimit):
+
+```shell
+brew install codelimit
+```
+
+### Pipx
+
+To install the standalone version of Code Limit in an isolated Python
+environment using [pipx](https://pypa.github.io/pipx) run:
+
+```
+pipx install codelimit
+```
+
+### PyPi
+
+To install the standalone version of Code Limit for your default Python
+installation run:
+
+```shell
+python -m pip install codelimit
+```
+
+### Platform binaries
+
+Binaries for different platforms (macOS, Linux, Windows) are available on the
+[latest release
+page](https://github.com/getcodelimit/codelimit/releases/latest).
+
+## Usage
+
 Run Code Limit without arguments to see the usage page:
 
 ```shell
@@ -23,7 +60,7 @@ $ codelimit
 ╰──────────────────────────────────────────────────────────────────────────────╯
 ```
 
-## Scanning a codebase
+### Scanning a codebase
 
 To scan a complete codebase run:
 
@@ -33,7 +70,7 @@ codelimit scan path/to/codebase
 
 <div id="scan.cast" style="z-index: 1; position: relative;"></div>
 
-## Viewing a report
+### Viewing a report
 
 To view the report with hard-to-maintain and unmaintainable functions of a
 codebase that was scanned before run:
@@ -47,7 +84,7 @@ codebase that was scanned before run:
 }
 </script>
 
-## Checking files
+### Checking files
 
 To check a single file or list of files for functions that need refactoring,
 run:

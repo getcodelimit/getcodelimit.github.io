@@ -1,47 +1,55 @@
-# Introduction
+<div align="center">
+    <img src="assets/logo.png"/>
+</div>
+
+<p align="center">
+    <em>Your Refactoring Alarm</em>
+</p>
+
+<div align="center">
+    <a href="https://github.com/getcodelimit/codelimit/blob/_codelimit_reports/main/codelimit.md" target="_blank">
+        <img src="https://github.com/getcodelimit/codelimit/blob/_codelimit_reports/main/badge.svg?raw=true" alt="Badge" class="off-glb">
+    </a>
+</div>
+
+No developer writes unmaintainable code on purpose, yet a lot of code is unmaintainable.
+
+How does that happen?
+
+Actually, most code start out easy, but over time it becomes harder to
+maintain, until it's unmaintainable.
+
+## How to prevent unmaintainable code?
+
+The best way to prevent unmaintainable code is to refactor it before it becomes
+unmaintainable.
+
+Developers can make simple things complex, like unmaintainable code, but they
+are much better at making complex things simple. Refactoring makes complex code
+simple again.
+
+But when to refactor? How much to refactor? What to refactor? That's where Code Limit comes in.
+
+## Meet Code Limit
 
 Code Limit is a tool for developers with one goal: _it tells the developer when
 it’s time to refactor_.
 
-Code Limit measures the lines of code for each function in your codebase and
-assigns each function to a category:
+### Key features and design principles
 
-| Easy | Verbose | Hard-to-maintain <span style="color: #e5832f;">&#x26A0;</span> | Unmaintainable <span style="color: #ff0000;">&#x2716;</span> |
-| :---: | :---: | :---: | :---: |
-| 1 - 15 lines of code | 16 - 30 lines of code | 31 - 60 lines of code | 60+ lines of code |
-| ![](assets/easy.png){: style="height:136px;width:230px"} | ![](assets/verbose.png){: style="height:189px;width:230px"} | ![](assets/hard-to-maintain.png){: style="height:294px;width:230px"} | ![](assets/unmaintainable.png){: style="height:564px;width:230px"} |
+* **A non-controversial code metric**: Most developers agree longer functions
+  are harder to maintain
+* **Actionable results**: There's always a refactoring possible to make
+  functions smaller.
+* **Runs everywhere**: Fits your development workflow, whether it's in a build
+  pipeline, a pre-commit hook, or standalone.
+* **Covers many languages**: A single tool for all your projects
+* **Sane defaults**: Zero configuration, but allows customization.
 
-As the table above shows, functions with more than 60 lines of code (comments
-and empty lines are not counted) are _unmaintainable_, and _need_ to be
-refactored. Functions with more than 30 lines of code run a risk of turning
-into unmaintainable functions over time, you should keep an eye on them and
-refactor if possible. Functions in the first two categories are fine and don't
-need refactoring.
+*[functions]: Also called methods or procedures, depending on your programming language
 
-Function length is just one code metric, but it is a very important code
-metric. Short functions are easy to understand, easy to test, easy to re-use.
-For example, code duplication is another important code metric but duplication
-is much easier to prevent and fix if your functions are short.
+## Next steps
 
-<figure markdown>
-    <div align="center">
-        <img src="assets/unmaintainable-code.jpg" width="500"/>
-    <figcaption>Unmaintainable code. Looks easy; should be done in half an hour I reckon <a href="https://twitter.com/KenScambler/status/477322711039893504">[source]</a></figcaption>
-    </div>
-</figure>
-
-Function length is a simple code metric, so simple you can count it by hand.
-It's also a (fairly) non-controversial metric, most developers agree longer
-functions are harder to maintain. Also, there's always a refactoring possible
-to make functions smaller.
-
-Because function length is such a simple code metric, many code quality tools
-measure it. But these tools measure a lot more metrics, sometimes so much
-metrics that developers are overwhemled and loose focus on the metrics that
-matter most.
-
-Code Limit measures only function length but it tries to be the best developer
-tool for measuring it. By notifying developers when it's time to refactor, Code
-Limit prevents unmaintainable code.
-
-Keep your software maintainable and start using Code Limit today!
+Go to the [Getting Started](getting-started/development-workflow.md) section to
+start using Code Limit, or read more about the [function length
+metric](why-function-length.md).

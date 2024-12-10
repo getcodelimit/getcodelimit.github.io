@@ -17,7 +17,9 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   features:
-    - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
     - navigation.footer
     - content.code.copy
 extra_css:
@@ -31,11 +33,15 @@ plugins:
       shadow: false
   - search
 markdown_extensions:
+  - abbr
   - attr_list
+  - pymdownx.snippets
 nav:
     - 'index.md'
-    - 'quickstart.md'
-    - 'usage.md'
+    - 'why-function-length.md'
+    - Getting Started:
+      - 'getting-started/development-workflow.md'
+      - 'getting-started/standalone-usage.md'
     - 'configuration.md'
     - 'faq.md'
     - 'development.md'
