@@ -2,7 +2,8 @@
 
 ## GitHub Action
 
-Code Limit is available as a GitHub Action
+Code Limit is available as a [GitHub
+Action](https://github.com/getcodelimit/codelimit-action)
 
 When running as a GitHub Action, Code Limit only checks modified files and
 *warns* about functions that *should* be refactored and *fails* for functions
