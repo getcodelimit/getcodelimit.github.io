@@ -37,7 +37,7 @@ markdown_extensions:
   - attr_list
   - pymdownx.snippets
 nav:
-    - 'index.md'
+    - Code Limit: 'index.md'
     - 'why-function-length.md'
     - Getting Started:
       - 'getting-started/development-workflow.md'

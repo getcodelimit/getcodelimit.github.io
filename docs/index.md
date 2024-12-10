@@ -1,3 +1,7 @@
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <div align="center">
     <img src="assets/logo.png"/>
 </div>
@@ -40,11 +44,16 @@ it’s time to refactor_.
 * **A non-controversial code metric**: Most developers agree longer functions
   are harder to maintain
 * **Actionable results**: There's always a refactoring possible to make
-  functions smaller.
-* **Runs everywhere**: Fits your development workflow, whether it's in a build
-  pipeline, a pre-commit hook, or standalone.
+  functions smaller
+* **Runs everywhere**: Fits your development workflow, whether it's in a [build
+  pipeline](getting-started/development-workflow.md), a [pre-commit
+hook](getting-started/development-workflow.md#pre-commit-hook), or
+[standalone](getting-started/standalone-usage.md)
 * **Covers many languages**: A single tool for all your projects
-* **Sane defaults**: Zero configuration, but allows customization.
+* **Sane defaults**: Zero configuration, but allows customization
+* **Low threshold to get started**: Can only check new or modified code, so
+  even if you have a backlog of technical debt, you can start using Code Limit
+today
 
 *[functions]: Also called methods or procedures, depending on your programming language
 
