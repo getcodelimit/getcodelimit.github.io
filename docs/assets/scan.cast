@@ -26,7 +26,7 @@
 [5.763746, "o", "\u001b[?2004l\r\r\n"]
 [5.765945, "o", "\u001b]2;codelimit scan .\u0007\u001b]1;codelimit\u0007"]
 [5.766406, "o", "\u001b]0;fastapi: codelimit scan .\u0007"]
-[6.010441, "o", "  \u001b[1mCode Limit\u001b[0m: \u001b[1;36m0.8\u001b[0m.\u001b[1;36m1\u001b[0m\r\n"]
+[6.010441, "o", "  \u001b[1mCodeLimit\u001b[0m: \u001b[1;36m0.8\u001b[0m.\u001b[1;36m1\u001b[0m\r\n"]
 [6.010585, "o", "  \u001b[1mScan date\u001b[0m: \u001b[1;36m2024\u001b[0m-\u001b[1;36m04\u001b[0m-\u001b[1;36m06\u001b[0m \u001b[1;92m18:06:10\u001b[0m\r\n"]
 [6.010803, "o", "  \u001b[1mScan root\u001b[0m: \u001b[35m/Users/rob/projects/opensource/\u001b[0m\u001b[95mfastapi\u001b[0m\r\n\u001b[?25l"]
 [7.022598, "o", "\r\u001b[2K                                                                                \r\n \u001b[1m \u001b[0m\u001b[1mLanguage        \u001b[0m\u001b[1m \u001b[0m \u001b[1m \u001b[0m\u001b[1m   Files\u001b[0m\u001b[1m \u001b[0m \u001b[1m \u001b[0m\u001b[1m       Lines of Code\u001b[0m\u001b[1m \u001b[0m \u001b[1m \u001b[0m\u001b[1m    Functions\u001b[0m\u001b[1m \u001b[0m \u001b[1m \u001b[0m\u001b[1m ⚠\u001b[0m\u001b[1m \u001b[0m \u001b[1m \u001b[0m\u001b[1m ✖\u001b[0m\u001b[1m \u001b[0m \r\n ────────────────────────────────────────────────────────────────────────────── \r\n  JavaScript                2                    341              21    0   \u001b[31m 1\u001b[0m  \r\n                                                                                "]

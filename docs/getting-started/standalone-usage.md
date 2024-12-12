@@ -4,7 +4,7 @@
 
 ### Homebrew
 
-Code Limit is available on
+CodeLimit is available on
 [Homebrew](https://formulae.brew.sh/formula/codelimit):
 
 ```shell
@@ -13,7 +13,7 @@ brew install codelimit
 
 ### Pipx
 
-To install the standalone version of Code Limit in an isolated Python
+To install the standalone version of CodeLimit in an isolated Python
 environment using [pipx](https://pypa.github.io/pipx) run:
 
 ```
@@ -22,7 +22,7 @@ pipx install codelimit
 
 ### PyPi
 
-To install the standalone version of Code Limit for your default Python
+To install the standalone version of CodeLimit for your default Python
 installation run:
 
 ```shell
@@ -37,7 +37,7 @@ page](https://github.com/getcodelimit/codelimit/releases/latest).
 
 ## Usage
 
-Run Code Limit without arguments to see the usage page:
+Run CodeLimit without arguments to see the usage page:
 
 ```shell
 $ codelimit
@@ -56,7 +56,7 @@ $ codelimit
 │ check          Check file(s)                                                 │
 │ scan           Scan a codebase                                               │
 │ report         Show report for codebase                                      │
-│ app            Code Limit GitHub App commands                                │
+│ app            CodeLimit GitHub App commands                                │
 ╰──────────────────────────────────────────────────────────────────────────────╯
 ```
 

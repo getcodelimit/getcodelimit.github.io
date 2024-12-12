@@ -1,8 +1,8 @@
 # F.A.Q.
 
-### Q. What programming languages does Code Limit support?
+### Q. What programming languages does CodeLimit support?
 
-Currently Code Limit supports these programming languages:
+Currently CodeLimit supports these programming languages:
 
 - C
 - C++
@@ -11,16 +11,16 @@ Currently Code Limit supports these programming languages:
 - Python
 - TypeScript
 
-### Q. How does Code Limit compare to ...
+### Q. How does CodeLimit compare to ...
 
 **Black**
 
-[Black](https://github.com/psf/black) is a code formatter and can run alongside Code Limit.
+[Black](https://github.com/psf/black) is a code formatter and can run alongside CodeLimit.
 
 **Flake8**
 
 [Flake8](https://github.com/PyCQA/flake8) is a linter and can run alongside
-Code Limit. Flake8 can be extended with third-party plugins.
+CodeLimit. Flake8 can be extended with third-party plugins.
 
 **Lizard**
 
@@ -38,4 +38,4 @@ development.
 **Ruff**
 
 [Ruff](https://github.com/astral-sh/ruff) is a linter and can run alongside
-Code Limit. Ruff has no linting rule for function length.
+CodeLimit. Ruff has no linting rule for function length.

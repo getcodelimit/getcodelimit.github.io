@@ -2,14 +2,14 @@
 
 ## GitHub Action
 
-Code Limit is available as a [GitHub
+CodeLimit is available as a [GitHub
 Action](https://github.com/getcodelimit/codelimit-action)
 
-When running as a GitHub Action, Code Limit only checks modified files and
+When running as a GitHub Action, CodeLimit only checks modified files and
 *warns* about functions that *should* be refactored and *fails* for functions
 that *need* to be refactored.
 
-To run Code Limit on every push and before every merge to `main`, append it to
+To run CodeLimit on every push and before every merge to `main`, append it to
 your GH Action workflow:
 
 ```yaml
@@ -30,13 +30,13 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v2
 
-      - name: 'Run Code Limit'
+      - name: 'Run CodeLimit'
         uses: getcodelimit/codelimit-action@v1
 ```
 
 ## Pre-commit hook
 
-Code Limit can be installed as a [pre-commit](https://pre-commit.com/) hook so
+CodeLimit can be installed as a [pre-commit](https://pre-commit.com/) hook so
 it alarms you during development when it's time to refactor:
 
 ```yaml
@@ -46,14 +46,14 @@ it alarms you during development when it's time to refactor:
     - id: codelimit
 ```
 
-Code Limit is intended to be used alongside formatting, linters and other hooks
+CodeLimit is intended to be used alongside formatting, linters and other hooks
 that improve the consistency and quality of your code (such as
 [Black](https://github.com/psf/black),
 [Ruff](https://github.com/astral-sh/ruff) and
 [MyPy](https://github.com/python/mypy).) As an example pre-commit configuration
 see the
 [`pre-commit-config.yaml`](https://github.com/getcodelimit/codelimit/blob/main/.pre-commit-config.yaml)
-from Code Limit itself.
+from CodeLimit itself.
 
-When running as a hook, Code Limit *warns* about functions that *should* be
+When running as a hook, CodeLimit *warns* about functions that *should* be
 refactored and *fails* for functions that *need* to be refactord.

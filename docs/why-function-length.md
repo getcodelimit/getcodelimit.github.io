@@ -17,20 +17,20 @@ It's also a (fairly) non-controversial metric, most developers agree longer
 functions are harder to maintain. Also, there's always a refactoring possible
 to make functions smaller.
 
-## Why Code Limit?
+## Why CodeLimit?
 
 Because function length is such a simple code metric, many code quality tools
 measure it. But these tools measure a lot more metrics, sometimes so much
 metrics that developers are overwhemled and loose focus on the metrics that
 matter most.
 
-Code Limit measures only function length but it tries to be the best developer
+CodeLimit measures only function length but it tries to be the best developer
 tool for measuring it. By notifying developers when it's time to refactor, Code
 Limit prevents unmaintainable code.
 
-## How Code Limit measures function length
+## How CodeLimit measures function length
 
-Code Limit measures the lines of code for each function in your codebase and
+CodeLimit measures the lines of code for each function in your codebase and
 assigns each function to a category:
 
 | Easy | Verbose | Hard-to-maintain <span style="color: #e5832f;">&#x26A0;</span> | Unmaintainable <span style="color: #ff0000;">&#x2716;</span> |

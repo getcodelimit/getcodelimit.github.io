@@ -1,6 +1,6 @@
 # Development
 
-After installing dependencies with `poetry install`, Code Limit can be run from
+After installing dependencies with `poetry install`, CodeLimit can be run from
 the repository root like this:
 
 ```shell

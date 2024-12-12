@@ -1,4 +1,4 @@
-site_name: Code Limit Documentation
+site_name: CodeLimit Documentation
 repo_url: https://github.com/getcodelimit/codelimit
 theme:
   name: material
@@ -37,7 +37,7 @@ markdown_extensions:
   - attr_list
   - pymdownx.snippets
 nav:
-    - Code Limit: 'index.md'
+    - CodeLimit: 'index.md'
     - 'why-function-length.md'
     - Getting Started:
       - 'getting-started/development-workflow.md'

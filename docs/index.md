@@ -32,11 +32,11 @@ Developers can make simple things complex, like unmaintainable code, but they
 are much better at making complex things simple. Refactoring makes complex code
 simple again.
 
-But when to refactor? How much to refactor? What to refactor? That's where Code Limit comes in.
+But when to refactor? How much to refactor? What to refactor? That's where CodeLimit comes in.
 
-## Meet Code Limit
+## Meet CodeLimit
 
-Code Limit is a tool for developers with one goal: _it tells the developer when
+CodeLimit is a tool for developers with one goal: _it tells the developer when
 it’s time to refactor_.
 
 ### Key features and design principles
@@ -52,7 +52,7 @@ hook](getting-started/development-workflow.md#pre-commit-hook), or
 * **Covers many languages**: A single tool for all your projects
 * **Sane defaults**: Zero configuration, but allows customization
 * **Low threshold to get started**: Can only check new or modified code, so
-  even if you have a backlog of technical debt, you can start using Code Limit
+  even if you have a backlog of technical debt, you can start using CodeLimit
 today
 
 *[functions]: Also called methods or procedures, depending on your programming language
@@ -60,5 +60,5 @@ today
 ## Next steps
 
 Go to the [Getting Started](getting-started/development-workflow.md) section to
-start using Code Limit, or read more about the [function length
+start using CodeLimit, or read more about the [function length
 metric](why-function-length.md).
