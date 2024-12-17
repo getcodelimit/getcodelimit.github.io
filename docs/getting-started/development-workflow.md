@@ -5,12 +5,19 @@
 CodeLimit is available as a [GitHub
 Action](https://github.com/getcodelimit/codelimit-action)
 
+Insert CodeLimit in your workflow like this: 
+
+```yaml
+- name: 'Run CodeLimit'
+  uses: getcodelimit/codelimit-action@v1
+```
+
 When running as a GitHub Action, CodeLimit only checks modified files and
 *warns* about functions that *should* be refactored and *fails* for functions
 that *need* to be refactored.
 
-To run CodeLimit on every push and before every merge to `main`, append it to
-your GH Action workflow:
+An example of a workflow that runs CodeLimit on every push and before every
+merge to `main`:
 
 ```yaml
 name: 'main'
