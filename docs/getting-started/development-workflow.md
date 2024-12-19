@@ -20,7 +20,7 @@ An example of a workflow that runs CodeLimit on every push and before every
 merge to `main`:
 
 ```yaml
-name: 'main'
+name: 'codelimit'
 
 on:
   push:
@@ -34,8 +34,8 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout'
-        uses: actions/checkout@v2
+      - name: 'Checkout sources'
+        uses: actions/checkout@v4
 
       - name: 'Run CodeLimit'
         uses: getcodelimit/codelimit-action@v1
