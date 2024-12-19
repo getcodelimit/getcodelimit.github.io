@@ -41,6 +41,51 @@ jobs:
         uses: getcodelimit/codelimit-action@v1
 ```
 
+### Status badge
+
+A status badge is stored after each run in the `_codelimit_reports` branch of
+the repository.
+
+To get the Markdown for the badge run the CodeLimit CLI in a local checkout of
+the repository, for example:
+
+```shell
+
+$ codelimit badge
+[![CodeLimit](https://github.com/getcodelimit/codelimit/blob/_codelimit_reports/
+main/badge.svg)](https://github.com/getcodelimit/codelimit/blob/_codelimit_repor
+ts/main/codelimit.md)
+
+✔ Badge Markdown copied to clipboard!
+```
+
+#### Meaning of the badge
+
+If a repository contains functions that *exceed 60 lines of code*, the badge
+will show:
+
+<div align="center">
+    <img src="../../../assets/badge-needs-refactoring.svg" alt="Badge needs refactoring" class="off-glb">
+</div>
+
+If a repository contains *no functions that exceed 30 lines of code*, the badge
+will show:
+
+<div align="center">
+    <img src="../../../assets/badge-100.svg" alt="Badge needs refactoring" class="off-glb">
+</div>
+
+Otherwise, the badge will show the percentage of code that does not exceed 30
+lines of code.
+
+If that percentage is 80% or higher, the badge will be green:
+
+<div align="center">
+    <img src="../../../assets/badge-88.svg" alt="Badge needs refactoring" class="off-glb">
+</div>
+
+If that percentage is below 80%, the badge will be orange.
+
 ## Pre-commit hook
 
 CodeLimit can be installed as a [pre-commit](https://pre-commit.com/) hook so

@@ -38,10 +38,10 @@ markdown_extensions:
   - pymdownx.snippets
 nav:
     - CodeLimit: 'index.md'
-    - 'why-function-length.md'
     - Getting Started:
       - 'getting-started/development-workflow.md'
       - 'getting-started/standalone-usage.md'
     - 'configuration.md'
+    - 'why-function-length.md'
     - 'faq.md'
     - 'development.md'
