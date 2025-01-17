@@ -6,6 +6,7 @@ Currently CodeLimit supports these programming languages:
 
 - C
 - C++
+- C#
 - Java
 - JavaScript
 - Python
