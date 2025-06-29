@@ -1,16 +1,16 @@
 # Development
 
-After installing dependencies with `poetry install`, CodeLimit can be run from
-the repository root like this:
+After installing dependencies with `uv sync`, CodeLimit can be run from the
+repository root like this:
 
 ```shell
-poetry run codelimit
+uv run codelimit
 ```
 
 For example, to check a codebase at `~/projects/fastapi` run:
 
 ```shell
-poetry run codelimit scan ~/projects/fastapi
+uv run codelimit scan ~/projects/fastapi
 ```
 
 ## Local installation using pipx
@@ -38,7 +38,7 @@ pip install git+https://github.com/getcodelimit/codelimit.git@issue-123
 Generate a self-contained binary:
 
 ```shell
-poetry run poe bundle
+uv run poe bundle
 ```
 
 ## Static documentation
@@ -46,13 +46,13 @@ poetry run poe bundle
 Generating the static documentation:
 
 ```shell
-poetry run mkdocs build
+uv run mkdocs build
 ```
 
 See the output:
 
 ```shell
-poetry run mkdocs serve
+uv run mkdocs serve
 ```
 
 Terminal sessions in the documentation are recorded with the [Asciinema

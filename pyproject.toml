@@ -1,19 +1,21 @@
-[tool.poetry]
+[project]
 name = "getcodelimit"
 version = "0.1.0"
 description = ""
-authors = ["Rob van der Leek <robvanderleek@gmail.com>"]
-license = "GPL-3.0-or-later"
+authors = [{ name = "Rob van der Leek", email = "robvanderleek@gmail.com" }]
+requires-python = ">=3.10,<3.14"
 readme = "README.md"
-package-mode = false
+license = "GPL-3.0-or-later"
 
-[tool.poetry.dependencies]
-python = ">=3.10,<3.14"
+[dependency-groups]
+dev = [
+    "mkdocs-material>=9.5.10,<10",
+    "mkdocs-glightbox>=0.3.7,<0.4",
+]
 
-[tool.poetry.group.dev.dependencies]
-mkdocs-material = "^9.5.10"
-mkdocs-glightbox = "^0.3.7"
+[tool.uv]
+package = false
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
