@@ -17,6 +17,7 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   features:
+    - toc.integrate
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
