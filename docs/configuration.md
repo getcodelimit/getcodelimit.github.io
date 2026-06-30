@@ -30,6 +30,25 @@ void some_function(int a, const char *b) { // nocl
 
 ## Excluding files
 
+Excluding files can be done through a repository-wide YAML configuration file,
+or through a program option.
+
+### Configuration file
+
+Files can be excluded from analysis by placing a
+[gitignore](https://git-scm.com/docs/gitignore) file-pattern in a file called
+`.codelimit.yml` in the root of the repository.
+
+Below is an example of a CodeLimit configuration file that excludes a single
+JavaScript file:
+
+```yaml
+exclude:
+  - docs/javascripts/asciinema-player.min.js
+```
+
+### Program option
+
 Files can be excluded from analysis by using the `--exclude` option.
 This option can be used multiple times and takes a [glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) as a
 value, for example:
